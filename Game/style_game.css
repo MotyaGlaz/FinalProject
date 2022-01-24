@@ -1,0 +1,85 @@
+*{
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: bisque;
+    height: 100%;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #9B4222;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.MainMenu{
+    display: flex;
+    justify-content: center;
+    background-color: #FFD7A7;
+    margin: 15px;
+    position: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.body{
+    margin: 30px auto;
+    background-color: lightsalmon;
+    position: center;
+    border-radius: 4px;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 440px
+}
+
+.line{
+    background-color: lightsalmon;
+    position: center;
+    width: 320px;
+    height: 80px;
+    display: flex;
+}
+
+.cell{
+    background-color: aliceblue;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.buttonPlay{
+    padding: 20px 32px;
+    color: #9B4222;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 20px;
+}
+
+.points{
+    margin-top: 20px;
+    color: #9B4222;
+    font-size: 20px;
+    text-align: center;
+}
+
+#start:hover {
+    background-color: darkkhaki;
+}
+
+#chit {
+    background-color: darkkhaki;
+    margin-top: 20px;
+}

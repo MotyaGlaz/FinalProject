@@ -1,0 +1,22 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MotyaGlaz/Homewarke_NaIT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MotyaGlaz/Homewarke_NaIT/issues"
+  },
+  "homepage": "https://github.com/MotyaGlaz/Homewarke_NaIT#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

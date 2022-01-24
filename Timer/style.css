@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background-color: bisque;
+}
+
+a {
+    text-decoration: none;
+    color: #9B4222;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.mainMenu{
+    display: flex;
+    justify-content: center;
+    background-color: #FFD7A7;
+    margin: 15px;
+    position: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.wrapper{
+    height: 50%;
+    margin: 20px 60px;
+    position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperTimer{
+    display: flex;
+    background-color: lightsalmon;
+    position: center;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+.time{
+    border: 2px solid #9B4222;
+    border-radius: 5px;
+    display: flex;
+    background-color: lightsalmon;
+    color: bisque;
+    font-size: 40px;
+}
+
+.wrapperButton{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 20px 0 0 0;
+}
+
+.eventButton{
+    border: 1px solid #9B4222;
+    padding: 5px 8px;
+    color: #9B4222;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    margin: 0 5px;
+    display: flex;
+    font-size: 20px;
+}
+
+.eventButton:hover{
+    background-color: darkkhaki;
+    color: bisque;
+}

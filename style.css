@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+body, html{
+    background-color: bisque;
+    height: 100%;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #9B4222;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.Menu{
+    display: flex;
+    justify-content: center;
+    background-color: #FFD7A7;
+    margin: 15px;
+    position: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.nav-item{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.nav-item:hover{
+    background-color: #FFD7A7;
+}
+
+.DropMenu{
+    float: left;
+    overflow: hidden;
+}
+
+.DropMenu:hover .DropMenuContent{
+    display: block;
+}
+
+.ButtonDropMenu{
+    background: #FFD7A7;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9B4222;
+}
+
+img{
+    width: 230px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+h6{
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+h1{
+    color: #9B4222;;
+    position: center;
+}
+
+.AboutMe{
+    background-color: lightsalmon;
+    width: 230px;
+    height: 180px;
+    margin: 20px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.TopMenu > li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.fa{
+    color: darkseagreen;
+    padding-left: 10px;
+}
+
+.submenu{
+    background-color: #FFD7A7;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.Menu{
+    display: flex;
+    justify-content: center;
+}
+
+.Menu ul {
+    background: #FFD7A7;
+}
+
+.Menu .submenu {
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: #FFD7A7;
+}
+
+.Menu ul li:hover .submenu {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}

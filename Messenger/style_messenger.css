@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background-color: bisque;
+}
+
+a {
+    text-decoration: none;
+    color: #9B4222;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.MainMenu{
+    display: flex;
+    justify-content: center;
+    background-color: #FFD7A7;
+    margin: 15px;
+    position: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.ClearButtonWrapper{
+    height: 100%;
+    display: flex;
+    margin: 5px 0;
+}
+
+#ClearButton{
+    padding: 5px 10px ;
+    color: #9B4222;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+
+#ClearButton:hover{
+    background-color: darkkhaki;
+}
+
+.Wrapper{
+    height: 100%;
+    min-width: 60rem;
+    max-width: 65rem;
+    margin: 2rem auto 0 auto;
+    display: flex;
+}
+
+.MessengerArea{
+    display: flex;
+    margin-bottom: 10rem;
+    width: 100%;
+    background-color: burlywood;
+}
+
+.Users{
+    overflow: auto;
+    background-color: burlywood;
+    width: 20rem;
+    min-width: 15rem;
+}
+
+.Messages{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-width: 30rem;
+    width: 100%;
+}
+
+.UserWrapper{
+    background-color: darkkhaki;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.UserAvatar{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    border-radius: 30%;
+    margin: 0 16px 0 16px;
+}
+
+.UserInfoWrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: center;
+    margin: 0 16px 0 16px;
+}
+
+.UserName, .LastMassage{
+    width: 100%;
+}
+
+.UserName, .UserInfoWrapper > span{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #9B4222;
+}
+
+.MessagesWrapper{
+    overflow: auto;
+}
+
+.MaxMessageLengthWrapper{
+    display: flex;
+    margin: 16px 16px 16px 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.Message{
+    background-color: blanchedalmond;
+    padding: 10px 14px;
+    max-width: 80%;
+    min-width: 20%;
+    border-radius: 8px;
+    color: #9B4222;
+}
+
+.MessageAuthor{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.TextMessage{
+    font-size: 12px;
+}
+
+.InputWrapper{
+    display: flex;
+    align-items: flex-end;
+    padding: 12px 18px;
+    background-color: burlywood;
+}
+
+.InputWrapper > textarea{
+    background-color: blanchedalmond;
+    outline: none;
+    padding: 10px 14px;
+    width: 100%;
+    height: auto;
+    max-height: 190px;
+    resize: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #9B4222;
+}
+
+.SendButtonWrapper{
+    align-self: center;
+    margin-left: 10px;
+}
+
+#SendButton{
+    padding: 10px 16px;
+    color: #9B4222;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+
+#SendButton:hover{
+    background-color: darkkhaki;
+}
