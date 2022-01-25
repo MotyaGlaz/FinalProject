@@ -26,8 +26,8 @@ function onStartGame(){
     }, time + 10)
 }
 
-function disabledButton(count){
-    if (count){
+function disabledButton(disabled){
+    if (disabled){
         document.getElementById('start').disabled = true;
         document.getElementById('start').style.backgroundColor = '#bdb76b';
     }else{
@@ -40,11 +40,9 @@ function  spawn(){
     idMole = Math.floor(Math.random()*(maxMole + 1));
     document.getElementById(idMole.toString()).onclick = whack;
     document.getElementById(idMole.toString()).style.background = '#9B4222';
-    //accessOfMole(idMole, true);
     sleep(time).then(() => {
         document.getElementById(idMole.toString()).style.background = '#f0f8ff';
         document.getElementById(idMole.toString()).onclick = null;
-        //accessOfMole(idMole, false);
     })
 }
 
@@ -52,7 +50,7 @@ function sleep(count){
     return new Promise(resolve => setTimeout(resolve, count));
 }
 
-function whack() {
+function whack(){
     document.getElementById(idMole.toString()).style.background = '#f0f8ff';
     document.getElementById(idMole.toString()).onclick = null;
     points++;

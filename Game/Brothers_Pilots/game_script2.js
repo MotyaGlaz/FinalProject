@@ -12,7 +12,7 @@ newGame();
 cells.forEach(iterator => {
     iterator.addEventListener('mousedown', () => {
         for (i=1;i<max;i++){
-            if (array[i][iterator.id.charAt(1)] != 0) {
+            if (array[i][iterator.id.charAt(1)] !== 0) {
                 array[i][iterator.id.charAt(1)] = 0;
                 points--;
             }
@@ -22,7 +22,7 @@ cells.forEach(iterator => {
             }
         }
         for (i=1;i<max;i++){
-            if (array[iterator.id.charAt(0)][i] != 0) {
+            if (array[iterator.id.charAt(0)][i] !== 0) {
                 array[iterator.id.charAt(0)][i] = 0;
                 points--;
             }
@@ -31,7 +31,7 @@ cells.forEach(iterator => {
                 points++;
             }
         }
-        if(array[iterator.id.charAt(0)][iterator.id.charAt(1)] != 0) {
+        if(array[iterator.id.charAt(0)][iterator.id.charAt(1)] !== 0) {
             array[iterator.id.charAt(0)][iterator.id.charAt(1)] = 0;
             points--;
         }
@@ -70,10 +70,10 @@ function newGame(){
 
 function changeCells(){
     moves++;
-    cells.forEach(iterator => {
+    cells.forEach(() => {
         for (i=1; i<max; i++){
             for (j=1; j<max; j++){
-                if(array[i][j] == 1){
+                if(array[i][j] === 1){
                     document.getElementById(i.toString() + j).style.background = ('#9B4222');
                 }else{
                     document.getElementById(i.toString() + j).style.background = ('#f0f8ff');
@@ -91,7 +91,7 @@ function onStartGame(){
 
 //кнопка для быстрой победы
 function onEndGame(){
-    cells.forEach(iterator => {
+    cells.forEach(() => {
         for (i=1; i<max; i++){
             for (j=1; j<max; j++){
                 document.getElementById(i.toString() + j).style.background = ('#9B4222');
@@ -104,8 +104,8 @@ function onEndGame(){
 }
 
 function checkVictory(){
-    if (points == 16){
-        if (moves == 1){
+    if (points === 16){
+        if (moves === 1){
             alert("Вы смогли победить за " + moves + " ход, поздравляю;)");
         } else if (moves > 1 && moves < 5){
             alert("Вы смогли победить за " + moves + " хода, поздравляю;)");

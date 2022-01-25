@@ -47,7 +47,7 @@ function newMessage(text){
     return messageWrapper;
 }
 
-document.addEventListener("DOMContentLoaded", function(event){
+document.addEventListener("DOMContentLoaded", function(){
     setting();
 })
 
@@ -62,5 +62,4 @@ function setting(){
 function onClearButtonClick(){
     localStorage.clear();
     location.reload();
-    return false;
 }

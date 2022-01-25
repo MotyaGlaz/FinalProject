@@ -4,7 +4,7 @@ document.getElementById("clearButton").addEventListener("click", onClear);
 let container = document.getElementById('pictures');
 
 function onCreate(){
-    if (container.innerHTML == ''){
+    if (container.innerHTML === ''){
         fetch('pictures.json').then(response => {
             response.json().then(resalt => {
                 AddImage(resalt.picture1);
@@ -24,7 +24,7 @@ function AddImage(adres){
 }
 
 function onClear(){
-    if (container.innerHTML != ''){
+    if (container.innerHTML !== ''){
         container.innerHTML = '';
     }
 }
