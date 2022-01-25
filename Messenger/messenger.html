@@ -4,18 +4,25 @@
     <title>Мессенджер</title>
     <meta charset="UTF-8">
     <link rel="icon" href="../image/icon.png">
-    <link rel="stylesheet" href="../image/I.jpg">
     <link rel="stylesheet" href="style_messenger.css">
 </head>
 <body>
-    <div class="MainMenu">
-        <a href="../index.html">Обо мне</a>
-        <a href="../Timer/timer.html">Таймер</a>
-        <a href="../Gallery/gallery.html">Галерея</a>
-        <div class="ClearButtonWrapper">
-            <button id="ClearButton" type="button">Очистить</button>
-        </div>
-    </div>
+    <header class="Menu">
+        <ul class="TopMenu">
+            <li><a href="https://vk.com/glaz_mat_al" target="_blank">Я в ВК</a></li>
+            <li><a href="../index.html">Обо мне</a></li>
+            <li><a href="../Messenger/messenger.html">Мессенджер</a></li>
+            <li><a href="#">Игры<i class="fa fa angle-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="../Game/Whack_a_Mole/Whack_a_Mole.html">Ударь крота</a></li>
+                    <li><a href="../Game/Brothers_Pilots/Brothers_Pilots.html">Братья пилоты</a></li>
+                </ul>
+            </li>
+            <li><a href="../Timer/timer.html">Таймер</a></li>
+            <li><a href="../Gallery/gallery.html">Галерея</a></li>
+        </ul>
+    </header>
+
     <div class="Wrapper">
         <div class="MessengerArea">
             <div class="Users">
@@ -29,6 +36,9 @@
             <div class="Messages">
                 <div class="MessagesWrapper" id="MW"></div>
                 <div class="InputWrapper">
+                    <div class="ClearButtonWrapper">
+                        <button id="ClearButton" type="button">Очистить</button>
+                    </div>
                     <textarea name="SendMessage" placeholder="Введите текст" class="InputText" id="InputText"></textarea>
                     <div class="SendButtonWrapper">
                         <button id="SendButton" type="button">Отправить</button>

@@ -41,48 +41,6 @@ a{
     background-color: #FFD7A7;
 }
 
-.DropMenu{
-    float: left;
-    overflow: hidden;
-}
-
-.DropMenu:hover .DropMenuContent{
-    display: block;
-}
-
-.ButtonDropMenu{
-    background: #FFD7A7;
-    outline: none;
-    border: none;
-    font-size: 16px;
-    font-weight: 400;
-    color: #9B4222;
-}
-
-img{
-    width: 230px;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
-h6{
-    font-size: 15px;
-    font-weight: normal;
-    margin-top: 0;
-}
-
-h1{
-    color: #9B4222;;
-    position: center;
-}
-
-.AboutMe{
-    background-color: lightsalmon;
-    width: 230px;
-    height: 180px;
-    margin: 20px;
-}
-
 ul{
     list-style: none;
     margin: 0;
@@ -123,17 +81,71 @@ ul{
 }
 
 .Menu .submenu {
-    -webkit-transform: scaleY(0);
     -ms-transform: scaleY(0);
     transform: scaleY(0);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
     transform-origin: 0 0;
     background: #FFD7A7;
 }
 
 .Menu ul li:hover .submenu {
-    -webkit-transform: scaleY(1);
     -ms-transform: scaleY(1);
     transform: scaleY(1);
+}
+
+img{
+    width: 230px;
+    margin-bottom: 0;
+    border-radius: 5%;
+}
+
+h6{
+    margin-left: 15%;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+h1{
+    color: #9B4222;;
+}
+
+.AboutMe{
+    border-radius: 5%;
+    background-color: lightsalmon;
+    width: 234px;
+    height: 150px;
+    margin: 20px 0 20px 0;
+}
+
+.WrapperHeading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.Wrapper{
+    display: flex;
+    height: 100%;
+    min-width: 60rem;
+    max-width: 65rem;
+    margin: 2rem auto 0 auto;
+}
+
+.WrapperColum{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.WrapperText{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.Paragraph{
+    font-size: 20px;
+    margin: 8px 0;
 }
