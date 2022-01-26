@@ -15,6 +15,7 @@ https://nodejs.org/en/download/
 1. Clone repository
 
  `git clone git@github.com:MotyaGlaz/FinalProject.git`
+
 2. Install
 
 `npm install`
